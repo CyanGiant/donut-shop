@@ -36,20 +36,39 @@ Shops.prototype.render = function() {
   return addShops;
 };
 
+//appended
+
+var createStoreForm = document.getElementById('createStoreForm');
+creatStoreForm.addEventListener('submit',function(e) {
+  e.preventDefault();
+    //preventDefault prevents the default action of submit which will refresh the page
+  var name = document.getElementById('name').value;
+  var minCust = parseInt(document.getElementById('minCustomers').value);
+  //parseInt makes sure the numbers are recognized
+  var maxCust = parseInt(document.getElementById('maxCustomers').value);
+  var avg = parseInt(document.getElementById('avgDonuts').value);
+
+  var check = checkMatch(name);
+  if(check !== false)
+    shops[check].removeshop(); //checks array check for same name
+ //
+
+  var store = new Shops(name, minCust, maxCust, averageDonuts);
 
 
 
-var downtown = new Shops('Downtown', {minCust: 8, maxCust: 43, averageDonuts: 4.5});
-downtown.render();
+var shops = [];
 
-var capitolHill = new Shops('Capitol Hill', {minCust: 4, maxCust: 37, averageDonuts: 2});
-capitolHill.render();
+var downtown     = new Shops('Downtown', 8, 43, 4.5);
 
-var southLkUnion = new Shops ('S. Lk. Union', {minCust: 9, maxCust: 23, averageDonuts: 6.33});
-southLkUnion.render();
+var capitolHill  = new Shops('Capitol Hill', 4, 37, 2);
 
-var wedgewood = new Shops ('Wedgewood', {minCust: 2, maxCust:28, averageDonuts: 1.25});
-wedgewood.render();
+var southLkUnion = new Shops('S. Lk. Union', 9, 23, 6.33);
 
-var ballard = new Shops ('Ballard', {minCust: 8, maxCust: 58, averageDonuts: 3.75});
-ballard.render();
+var wedgewood    = new Shops('Wedgewood', 2, 28, 1.25);
+
+var ballard      = new Shops('Ballard', 8, 58, 3.75);
+renderAll();
+// should render all without individual need, should be able to removie all the Min, Max and avg stuff including curlies below.
+// var bellevue = new Shops ('Bellevue', {minCust: 12, maxCust: 40, averageDonuts: 2.5});
+// bellevue.render();
