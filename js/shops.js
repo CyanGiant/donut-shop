@@ -41,7 +41,7 @@ Shops.prototype.render = function() {
     var maxInput = parseInt(document.getElementById('maxCust').value);
     var averageDonuts = parseInt(document.getElementById('averageDonuts').value);
     var addloc = [locationName, minInput, maxInput, averageDonuts];
-    console.log(addloc);
+
     var newStore = new Shops(addloc[0], addloc[1], addloc[2], addloc[3]);
     newStore.render();
 
