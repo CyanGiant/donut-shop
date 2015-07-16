@@ -8,3 +8,8 @@ Version 1.01 (1.00 scratched) 071415
  - Aid from many sources - Sam Hamm, Dale Corns, Stuart Hiller, Jose Tello, Jeilymar Brady, Tami Love, Micheal Wong, Wyatt Williams,
  -CSS zebra striping source: https://css-tricks.com/snippets/css/css3-zebra-striping-a-table/
 
+version 1.1 071515
+  - Added form for adding location.
+  - new for does not revise existing locations.
+  - Altered Donatsu-san to a .png (big thanks to Sam Hamm)
+

@@ -9,7 +9,7 @@
   <p>TOP-POT DONUTS</p>
     <table id="donut_table" style="border: 3px solid black">
       <tr id="tr-donut">
-        <img src="img/MrDonatsu.jpg" style="width:200px;">
+        <img src="img/donatsu.png" style="width:200px;">
         <th> LOCATION </th>
         <td>0700</td>
         <td>0800</td>
@@ -25,6 +25,29 @@
         <th>TOTAL</th>
       </tr>
     </table>
+    <form>
+     <div id="userInput">
+    <form id="createStoreForm">
+      <fieldset>
+        <legend>Create or Edit Location</legend>
+        <h4>
+          <label for="name"> Shop name: </label>
+          <input type="text" id="name" placeholder="Desired Location">
+        </h4>
+        <h4>
+          <label for="minCust"> Minimum Hourly Customers: </label>
+          <input type="text" id="minCust" placeholder="Min. Hourly Customers">
+        </h4>
+        <h4>
+          <label for="maxCust"> Maximum Hourly Customers: </label>
+          <input type="text" id="maxCust" placeholder="Max. Hourly Customers">
+        </h4>
+        <h4>
+          <label for="averageDonuts"> Average Donuts per Customer: </label>
+          <input type="text" id="averageDonuts" placeholder="Avg. Donuts per Customer">
+        </h4>
+          <button id='btn' type="button">Add Location</button>
+    </form>
   <script src="js/shops.js"></script>
 
  </body>
