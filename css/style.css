@@ -43,3 +43,22 @@ background-color: #d1eaea;
 html {
 background-color: mintCream;
 }
+
+fieldset {
+font-size: 1em;
+text-align: left;
+padding: 2px;
+border: 1px solid black;
+width: 42%;
+}
+
+legend {
+font-size: 1em;
+}
+
+h4 {
+text-align: left;
+font-family: sans-serif;
+padding-left: 10px;
+font-size: .8em;
+}
