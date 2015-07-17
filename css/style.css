@@ -1,64 +1,80 @@
-p {
-font-family: sans-serif;
-font-size: 1em;
-font-weight: bold;
-padding-top: 15px;
-padding-left: 217px;
+*{
+  background-color: #bfae99;
+  font-family: 'Josefin sans', sans-serif;
 }
-img {
-padding-left: 195px;
-padding-bottom: 15px;
+.nav ul {
+  border: 5px solid #4c3718;
+  background: pink;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0;
+  margin: 15;
+}
+.nav li {
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 2px solid #4c3718;
+}
+.nav a {
+  text-decoration: none;
+  color: #ea63ca;
+  display: inline-block;
+  transition: .9s background-color;
+}
+.nav a:hover {
+  background-color: mintCream;
+}
+.active {
+  background-color: green;
+  color: #444;
+  cursor: default;
+}
+.medium {
+  width: 20%;
+}
+.donut_table {
+  position: relative;
+  max-width: 50%;
+}
+h1 {
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
+  border-collapse: inherit;
+  border: 5px solid #4c3718;
+  border-radius: 40px;
+  background-color: pink
 }
 th {
-font-family: sans-serif;
-font-size: .9em;
-background-color: #666;
-color: #FFF;
-padding: 8px 20px;
-font-weight: initial;
-border-collapse: separate;
-border: 1px solid #000;
+  font-size: 1em;
+  background-color: #bf2a97;
+  padding: 8px 20px;
+  font-weight: bold;
+  border-collapse: separate;
+  border: 1px solid #4c3718;
+  color: pink;
 }
-
-td {
-font-family: sans-serif;
-font-size: .7em;
-border: 1px solid black;
-text-align: center;
-padding: 2px 5px;
+tr,td {
+  font-size: .9em;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2px 5px;
 }
-
-tr {
-font-family: sans-serif;
-border: 1px solid black;
-font-size: .8em;
-padding: 4px 8px;
-text-align: center;
+tr,td:nth-child(odd)  /* same */ {
+  background-color: #d7ddd3;
 }
-
-table tr:nth-child(odd) {
-background-color: #d1eaea;
+tr,td:nth-child(2n+0) /* represents every even row of an HTML table */ {
+  background-color: pink;
 }
-
-html {
-background-color: mintCream;
-}
-
 fieldset {
-font-size: 1em;
-text-align: left;
-padding: 2px;
-border: 1px solid black;
-width: 42%;
+  position: relative;
+  font-size: 1em;
+  text-align: center;
+  border: 2px solid black;
+  max-width: 50%;
 }
-
-legend {
-font-size: 1em;
-}
-
-h4 {
-text-align: left;
-font-family: sans-serif;
-padding-left: 10px;
-font-size: .8em;
+.form {
+  padding: 10px;
+  font-size: .9em;
 }

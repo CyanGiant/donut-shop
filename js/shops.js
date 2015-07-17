@@ -10,30 +10,45 @@ var Shops = function(locationName, minCust, maxCust, averageDonuts) {
   this.closes        = 1800;
   this.hoursOpen     = (this.closes - this.opens)/100;
 };
-
+//creates average amount of donuts per hour
 Shops.prototype.avgHour = function() {
   return Math.floor((Math.random() * (this.maxCust - this.minCust + 1) + this.minCust) * this.averageDonuts);
 };
 
 Shops.prototype.render = function() {
-
-  var main = document.getElementById('donut_table');
-  var addRow = document.createElement('tr');
-  addRow.innerHTML = this.locationName;
-  main.appendChild(addRow);
-
+  var hourly = [];
   var total = 0;
-    for (var i = 0; i < this.hoursOpen; i++) {
-      var addShops = document.createElement('td');
-      addShops.innerHTML = this.avgHour();
-      addRow.appendChild(addShops);
-      total += this.avgHour(i);
-  }
 
-  var addTotal = document.createElement('td');
-  addTotal.innerHTML = total;
-  addRow.appendChild(addTotal);
-  };
+//if statement checks for existing store name, if yes it replaces with updated inputs / else runs otherwise to add new store location
+  if(document.getElementById(this.locationName)) {
+    var grabber = document.getElementById(this.locationName).childNodes;
+    for (var i = 0; i < grabber.length - 1; i++){
+      hourly[i] = this.avgHour();
+      grabber[i].innerHTML = hourly[i];
+      total += hourly[i];
+      console.log(total + " " + hourly);
+    }
+    grabber[grabber.length -1].innerHTML = total;
+  }else{
+    var main = document.getElementById('donut_table');
+    var addRow = document.createElement('tr');
+    addRow.id = this.locationName;
+    addRow.innerHTML = this.locationName;
+    main.appendChild(addRow);
+
+      for (var j = 0; j < this.hoursOpen; j++) {
+        var addShops = document.createElement('td');
+        hourly[j] = this.avgHour();
+        addShops.innerHTML = this.avgHour();
+        addRow.appendChild(addShops);
+        total += hourly[j];
+      }
+
+    var addTotal = document.createElement('td');
+    addTotal.innerHTML = total;
+    addRow.appendChild(addTotal);
+  }
+};
 
   document.getElementById('btn').addEventListener('click', function() {
     var locationName = document.getElementById('name').value;

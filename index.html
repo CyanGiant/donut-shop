@@ -1,15 +1,30 @@
  <!DOCTYPE html>
 <html>
  <head>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
   <meta charset="UTF-8">
   <title>Donut Shops</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
  </head>
+ <div class="nav">
+  <ul>
+    <li class="home"><a href="http://www.toppotdoughnuts.com">Home</a></li>
+    <li class="ourDoughnuts"><a href="http://www.toppotdoughnuts.com/doughnuts.html">Our Doughnuts</a></li>
+    <li class="ourCoffee"><a href="http://www.toppotdoughnuts.com/coffee.html">Our Coffee</a></li>
+    <li class="merchandise"><a href="http://www.toppotdoughnuts.com/merchandise.html">Merchandise</a></li>
+    <li class="locations"><a href="http://www.toppotdoughnuts.com/cafe-info.html">Locations</a></li>
+  </ul>
+ </div>
  <body>
-  <p>TOP-POT DONUTS</p>
-    <table id="donut_table" style="border: 3px solid black">
+  <h1>TOP POT DONUTS</h1>
+  <p>Those who have never seen a living Martian can scarcely imagine the strange horror of its appearance.  The peculiar V-shaped mouth with its pointed upper lip, the absence of brow ridges, the absence of a chin beneath the wedgelike lower lip, the incessant quivering of this mouth, the Gorgon groups of tentacles, the tumultuous breathing of the lungs in a strange atmosphere, the evident heaviness and painfulness of movement due to the greater gravitational energy of the earth--above all, the extraordinary intensity of the immense eyes--were at once vital, intense, inhuman, crippled and monstrous.  There was something fungoid in the oily brown skin, something in the clumsy deliberation of the tedious movements unspeakably nasty.  Even at this first encounter, this first glimpse, I was overcome with disgust and dread.</p>
+
+  <p>Suddenly the monster vanished.  It had toppled over the brim of the cylinder and fallen into the pit, with a thud like the fall of a great mass of leather.  I heard it give a peculiar thick cry, and forthwith another of these creatures appeared darkly in the deep shadow of the aperture.</p>
+
+  <p>I turned and, running madly, made for the first group of trees, perhaps a hundred yards away; but I ran slantingly and stumbling, for I could not avert my face from these things.</p>
+    <table id="donut_table" style="border: 3px solid #4c3718">
       <tr id="tr-donut">
-        <img src="img/donatsu.png" style="width:200px;">
+        <img src="img/donatsu.png" alt="donatsu" class= "align-center medium">
         <th> LOCATION </th>
         <td>0700</td>
         <td>0800</td>
@@ -30,23 +45,23 @@
     <form id="createStoreForm">
       <fieldset>
         <legend>Create or Edit Location</legend>
-        <h4>
+        <div class="form">
           <label for="name"> Shop name: </label>
           <input type="text" id="name" placeholder="Desired Location">
-        </h4>
-        <h4>
+        </div class="form">
+        <div class="form">
           <label for="minCust"> Minimum Hourly Customers: </label>
           <input type="text" id="minCust" placeholder="Min. Hourly Customers">
-        </h4>
-        <h4>
+        </div class="form">
+        <div class="form">
           <label for="maxCust"> Maximum Hourly Customers: </label>
           <input type="text" id="maxCust" placeholder="Max. Hourly Customers">
-        </h4>
-        <h4>
+        </div class="form">
+        <div class="form">
           <label for="averageDonuts"> Average Donuts per Customer: </label>
           <input type="text" id="averageDonuts" placeholder="Avg. Donuts per Customer">
-        </h4>
-          <button id='btn' type="button">Add Location</button>
+        </div class="form">
+          <button id='btn' type="button">Add/Revise Location</button>
     </form>
   <script src="js/shops.js"></script>
 

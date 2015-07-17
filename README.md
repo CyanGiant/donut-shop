@@ -13,3 +13,18 @@ version 1.1 071515
   - new for does not revise existing locations.
   - Altered Donatsu-san to a .png (big thanks to Sam Hamm)
 
+version 1.2 071615
+  -Append and revise features fully functional.
+  -STYLES
+  -Changed color scheme.
+  -Added ipsum lorem via fillerati.com (H.G. Wells War of the Wolds).
+  -Changed zebra striping due to re-working of table formatting. (changed table data location names to parent nodes no longer child nodes).
+  -Changed all text to 'Josefin Sans' - source google fonts.
+  -Added hover on link color rectangles.
+  -Attemped and failed hard at making a horizontal nav bar / could create but unable to span full width and have color block upon rollover be consistent throughout each link.
+  -Unable to create space above Create / edit location form.
+  -Unable to center location names in table.
+  -Unable to find proper location for donatsu.
+
+  -Spun wheels making nothing happen for hours.
+  -Not at all happy with this iteration.
