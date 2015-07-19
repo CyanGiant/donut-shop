@@ -11,6 +11,7 @@ body {
   background-attachment: fixed;
 }
 .nav-btn {
+  border-radius: 20px;
   color: #4c3718;
   width: 19%;
   background-color: #bfae99;
@@ -25,8 +26,6 @@ body {
 }
 .nav ul {
   width: 100%;
-  /*border: 5px solid #4c3718;*/
-  /*background-color:pink;*/
   list-style: none;
   text-align: center;
   display: inline;
@@ -46,12 +45,17 @@ body {
   transition: .9s background-color;
 }
 .nav a:hover {
+  position: relative;
   background-color: mintCream;
+  height:40px;
+  border: 5px solid #4c3718;
+  border-radius: 20px;
 }
 .nav a:active {
   background-color: #4c3718;
-  color: #444;
-  cursor: default;
+  color: cyan;
+  cursor: nw-resize;
+  border: 5px solid #bfae99;
 }
 @media screen and (min-width: 600px) {
   .nav li {
@@ -67,16 +71,7 @@ body {
     display: inline-block;
     margin-right: 0;
   }
-.grow:hover
-{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
-}
-.grow {
-  position: absolute;
-  right: 50px;
-}
+
 .tables{
   position: relative;
   top: 175px;
@@ -84,11 +79,11 @@ body {
 }
 
 #donut_table {
+  border-radius:15px;
   float: right;
   position: relative;
   max-width: 60%;
   margin-right: 20px;
-  margin-top: 30px;
   background-color: #bfae99;
 }
 h1 {
@@ -102,15 +97,31 @@ h1 {
 
 }
 th {
+
   font-size: 1em;
   background-color: #bf2a97;
   padding: 8px 20px;
   font-weight: bold;
   border-collapse: separate;
   border: 1px solid #4c3718;
+  border-radius: 10px;
   color: pink;
 }
+tbody tr:nth-child(odd) {
+   background-color: #ccc;
+}
+tbody td:nth-child(even) {
+   background-color: pink;
+}
+tr:nth-child(odd) {
+   background-color: #ccc;
+}
+tr:nth-child(even) {
+   background-color: pink;
+}
 tr,td {
+
+  border-radius: 10px;
   font-size: .9em;
   border: 1px solid black;
   text-align: center;
@@ -121,36 +132,103 @@ tr {
 }
 
 section {
-  position: absolute;
-  float: right;
-  top: 500px;
+  position: relative;
   width: 95%;
   margin-left: 2.5%;
   margin-right: 2.5%;
+  top: 15px;
 
 }
 article {
   text-align:left;
-  position: absolute;
-  float:right;
-  width: 47.5%;
-  border: 4px solid #4c3718;
+  padding: 3px;
   background-color: #bfae99;
-  text-decoration: blink;
+  border: 3px solid #4c3718;
+  border-radius: 20px;
+  float: left;
+  position: inherit;
 }
 p {
   margin: 3px;
   float: right;
 }
+
 fieldset {
-  border: 2px solid #4c3718;
+  border: 3px solid #4c3718;
+  border-radius: 15px;
   font-size: 1em;
   max-width: 30%;
   float: left;
   margin-left: 10px;
   background-color: #bfae99;
-  margin-top: 200px;
 }
 .form {
   padding: 10px;
+}
+input,button {
+  background-color: pink;
+}
+legend {
+  color: pink;
+  margin-top: 10px;
+  border: 3px #4c3718 solid;
+  background-color: #bf2a97;
+  border-radius: 5px;
+  padding:5px;
+}
+
+@keyframes slide {
+   0% {
+    left: 0px;
+    top: 0px;
+
+  }
+  25% {
+    left: 488px;
+    top: -100px;
+    -webkit-transform: rotateZ(90deg);
+    -webkit-transform: rotateY(180deg);
+  }
+  50%{
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotateZ(180deg);
+    -webkit-transform: rotateZ(-90deg);
+  }
+  75% {
+    left: -488px;
+    top: -100px;
+    -webkit-transform: rotateZ(270deg)
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    -webkit-transform: rotateZ(360deg)
+  }
+/*  .rotate:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}*/
+}
+.stage {
+  height: 250px;
+  position: relative;
+  min-width: 538px;
+  margin-top: 200px;
+}
+.stage:hover {
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: repeat;
+}
+.donatsu {
+  margin-top: 55px;
+  float: left;
+  margin-left: 42%;
+  position: inherit;;;;;
 }
