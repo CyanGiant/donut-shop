@@ -1,0 +1,734 @@
+<!DOCTYPE html><!--[if gte IE 9 ]><html class="ie ie9 scripts-not-loaded" lang="en-GB"> <![endif]--><!--[if !(IE)]><!-->
+<!-- saved from url=(0071)https://canvas.instructure.com/courses/942949/discussion_topics/4060830 -->
+<html class="not-ie " lang="en-GB" hc="a0" hcx="0"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Topic: Read: Chart.js and Canvas APIs</title>
+  <!--[if lte IE 8]> <meta http-equiv=refresh content="0; URL=/ie-8-is-not-supported.html" /> <![endif]-->
+
+  <link rel="icon" type="image/x-icon" href="https://canvas.instructure.com/favicon.ico">
+  <link rel="apple-touch-icon" href="https://canvas.instructure.com/apple-touch-icon.png">
+
+
+      <link href="https://canvas.instructure.com/feeds/topics/4060830/enrollment_nXWVmyz7ylIy0JZhKyacvcIyLIrQmRdsflY73eNI.atom" rel="alternate" title="Discussion Atom feed" type="application/atom+xml">
+
+  <link href="drawing_text_files/vendor_legacy_normal_contrast.css" media="all" rel="stylesheet" type="text/css">
+<link href="drawing_text_files/common_legacy_normal_contrast.css" media="all" rel="stylesheet" type="text/css">
+  
+  <meta content="app-id=480883488" name="apple-itunes-app">
+<meta content="app-id=com.instructure.candroid" name="google-play-app">
+  <link href="drawing_text_files/tinymce_legacy_normal_contrast.css" media="all" rel="stylesheet" type="text/css">
+<link href="drawing_text_files/discussions_legacy_normal_contrast.css" media="all" rel="stylesheet" type="text/css">
+<link href="drawing_text_files/learning_outcomes_legacy_normal_contrast.css" media="all" rel="stylesheet" type="text/css">
+  
+  
+  
+<style type="text/css"></style><style></style><style>/* From: editor/KeyboardShortcuts */
+.tinymce-keyboard-shortcuts-toggle{margin-right:5px;}ul.tinymce-keyboard-shortcuts{list-style:none;margin:0;}ul.tinymce-keyboard-shortcuts code{display:inline-block;color:#123583;background:none;border:none;font-weight:bold;font-size:inherit;}</style></head>
+
+
+<body class="with-left-side with-right-side padless-content discussions context-course_942949 webkit chrome no-touch">
+
+<ul role="alert" aria-live="assertive" id="flash_message_holder"></ul>
+<div role="alert" aria-live="assertive" id="flash_screenreader_holder" class="screenreader-only"></div>
+
+
+<div id="application">
+  
+
+  <div id="header" class="no-print ">
+    <div id="header-inner">
+      <a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#content" id="skip_navigation_link">Skip to content</a>
+      <a id="header-logo" href="https://canvas.instructure.com/">My dashboard</a>
+      <b id="header-logo-secondary"></b>
+      <div id="topbar" role="navigation" aria-label="User Menu">
+    <ul id="identity">
+      <li class="user_name"><a href="https://canvas.instructure.com/about/4556763">James Bennett</a></li>
+      <li class="first inbox">
+        <a href="https://canvas.instructure.com/conversations?">
+          <span>Inbox</span>
+              <b class="unread-messages-count" style="display: none;">0</b>
+        </a>
+      </li>
+      <li><a href="https://canvas.instructure.com/profile/settings">Settings</a></li>
+    <li class="user_id" style="display: none;">4556763</li>
+    <li class="course_id" style="display: none;">942949</li>
+    <li id="current_context_code" style="display: none;">course_942949</li>
+    <li class="user_long_name" style="display: none;">James Bennett</li>
+    <li class="logout">
+      <form accept-charset="UTF-8" action="https://canvas.instructure.com/logout" id="identity-logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="_method" type="hidden" value="delete"><input name="authenticity_token" type="hidden" value="b+s+OqPE8r99E5IKUmFXMNa+jKM3ysMCvJoedA+5FAMJuGkK8YCa9AtjomMnGRwBnY7pwWKkoUTW8nEgQ4hjbw=="></div>
+        <a href="https://canvas.instructure.com/logout" onclick="document.getElementById('identity-logout-form').submit(); return false">Logout</a>
+</form>    </li>
+    <li id="identity-help-container"><a href="http://help.instructure.com/" class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button">Help</a></li>
+</ul>
+
+</div>
+
+      <div class="hidden-readable">
+  Press comma to hear a list of keyboard shortcuts for this page.
+</div>
+        <ul role="navigation" id="menu" aria-label="Main Navigation">
+
+    <li id="courses_menu_item" class="menu-item">
+        <a href="https://canvas.instructure.com/courses" class="menu-item-title">
+    Courses    <span class="menu-item-title-icon"></span> <i class="icon-mini-arrow-down"></i>
+  
+  </a>
+  <div class="menu-item-drop">
+    
+    <table cellspacing="0">
+      <tbody><tr>
+        <td class="menu-item-drop-column" id="menu_enrollments">
+  <div class="menu-item-header-container">
+    <span class="menu-item-heading">
+      My courses
+    </span>
+    <div class="menu-item-customize">
+      <a href="https://canvas.instructure.com/courses" class="customListOpen">View All or Customise (1)</a>
+    </div>
+  </div>
+  <ul class="menu-item-drop-column-list">
+    <li class="customListItem" data-id="942949">
+  <a href="https://canvas.instructure.com/courses/942949">
+    <span class="name ellipsis" title="SEA-B31: CS &amp; Web Development Bootcamp - SEA-B31:">SEA-B31: CS &amp; Web Development Bootcamp</span>
+      <span class="subtitle ellipsis enrollment_term menu-item-drop-float-right"></span>
+    <span class="subtitle ellipsis">enrolled as: Student</span>
+  </a>
+</li>
+
+  </ul>
+</td>
+
+        
+        
+      </tr>
+    </tbody></table>
+    
+  </div>
+
+    </li>
+    <li id="grades_menu_item" class="menu-item">
+      <a href="https://canvas.instructure.com/grades" class="menu-item-no-drop">
+        
+        
+        Grades
+        
+      </a>
+    </li>
+    <li id="calendar_menu_item" class="menu-item">
+      <a href="https://canvas.instructure.com/calendar" class="menu-item-no-drop">
+        
+        
+        Calendar
+        
+      </a>
+    </li>
+    
+
+  </ul>
+
+    </div>
+  </div>
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" src="wyciwyg://frame/0"></iframe>
+  </div>
+
+  
+
+  <div id="wrapper-container">
+    <div id="wrapper">
+      
+          <div id="left-side" class="list-view ">
+              <div id="section-tabs-header" class="
+                  h1">
+                SEA-B31:
+              </div>
+            <nav aria-label="context" role="navigation"><ul id="section-tabs"><li class="section"><a class="home" href="https://canvas.instructure.com/courses/942949">Home</a></li><li class="section"><a class="people" href="https://canvas.instructure.com/courses/942949/users">People</a></li><li class="section"><a aria-label="Course Discussions" class="discussions active" href="https://canvas.instructure.com/courses/942949/discussion_topics">Discussions</a></li><li class="section"><a aria-label="Course assignments" class="assignments" href="https://canvas.instructure.com/courses/942949/assignments">Assignments</a></li><li class="section"><a class="quizzes" href="https://canvas.instructure.com/courses/942949/quizzes">Quizzes</a></li><li class="section"><a aria-label="Course grades" class="grades" href="https://canvas.instructure.com/courses/942949/grades">Grades</a></li><li class="section"><a aria-label="Course Files" class="files" href="https://canvas.instructure.com/courses/942949/files">Files</a></li></ul></nav>
+        </div>
+        <div id="main" style="min-height: 450px;">
+          <div id="not_right_side">
+            <div id="content-wrapper">
+                <nav aria-label="breadcrumbs" id="breadcrumbs" role="navigation"><ul><li class="home"><a href="https://canvas.instructure.com/"><span class="ellipsible">      <i class="icon-home" title="My dashboard">
+        <span class="screenreader-only">My dashboard</span>
+      </i>
+</span></a></li><li><a href="https://canvas.instructure.com/courses/942949"><span class="ellipsible">SEA-B31:</span></a></li><li><a href="https://canvas.instructure.com/courses/942949/discussion_topics"><span class="ellipsible">Discussions</span></a></li><li><a href="drawing_text_files/drawing_text.html"><span class="ellipsible">Read: Chart.js and Canvas APIs</span></a></li></ul></nav>
+                
+              <div id="content" role="main" class="container-fluid">
+                
+
+
+  <div id="discussion-managebar" class="toolbarView">
+    <div class="headerBar">
+      <div class="row-fluid form-inline" style="overflow: visible;">
+        <div class="pull-right">
+
+
+            <div class="admin-links">
+              <a class="al-trigger btn announcement_cog" href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" role="button">
+                <i class="icon-settings"></i><i class="icon-mini-arrow-down"></i>
+                <span class="screenreader-only">
+                    Manage discussion
+                  </span>
+              </a>
+              <ul class="al-options">
+                <li><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="mark_all_as_read"><i class="icon-mark-as-read" aria-hidden="hidden"></i> Mark all as read</a></li>
+
+
+
+
+
+
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="discussion_container">
+    <article id="discussion_topic" class="admin-link-hover-area topic discussion_entry discussion_topic  has_unread_entries can_be_marked_as_read read replying" data-mark-read-url="/api/v1/courses/942949/discussion_topics/4060830/read">
+      <div class="entry-content">
+          <div class="discussion-section discussion-assignment-section alert alert-info">
+  <div class="row-fluid">
+    <div class="span6">
+      <p class="discussion-title">
+        This is a graded discussion: <span class="discussion-points">10 points possible</span>
+      </p>
+    </div>
+
+    <div class="span6 right-align">
+      <div class="discussion-pubdate">
+          <b data-tooltip="" data-html-tooltip-title="Jul 20 at  8:59">
+            due Jul 20 at  8:59
+          </b>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+        <header class="discussion-section clearfix">
+          
+          <div class="discussion-header-content right-of-avatar">
+            <div class="pull-left">
+              <h1 class="discussion-title">Read: Chart.js and Canvas APIs</h1>
+              <div class="discussion-subtitle">
+              </div>
+            </div>
+
+            <div class="discussion-header-right pull-right">
+              <div class="new-and-total-badge">
+  <span class="new-items" aria-hidden="true" data-tooltip="" data-bind="{&quot;title&quot;:&quot;unreadText&quot;, &quot;text&quot;:&quot;unreadCount&quot;}" title="5 unread replies.">5</span>
+  <span class="screenreader-only" data-bind="{&quot;text&quot;:&quot;unreadText&quot;}">
+    5 unread replies.
+  </span>
+  <span class="total-items" aria-hidden="true" data-tooltip="" title="5 replies.">5</span>
+  <span class="screenreader-only">
+    5 replies.
+  </span>
+</div>
+
+            </div>
+          </div>
+        </header>
+
+        <div class="discussion-section message_wrapper">
+          <div data-bind="message" class="message user_content enhanced"><p><strong>Read:</strong></p>
+<p>Read <a class="external" href="http://www.webdesignerdepot.com/2013/11/easily-create-stunning-animated-charts-with-chart-js/" target="_blank"><span>this article</span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span></a>&nbsp;on the&nbsp;<strong>Chart.js API</strong>.</p>
+<p>Read the following articles&nbsp;on the <strong>Canvas&nbsp;API</strong>.</p>
+<ol>
+<li><a class="external" href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage" target="_blank"><span>Basic usage</span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span></a></li>
+<li><a class="external" href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes" target="_blank"><span>Drawing shapes with canvas</span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span></a></li>
+<li><a class="external" href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors" target="_blank"><span>Applying styles and colors</span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span></a></li>
+<li><a class="external" href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text" target="_blank"><span>Drawing text</span><span class="ui-icon ui-icon-extlink ui-icon-inline" title="Links to an external site."></span></a></li>
+</ol><p><strong>Reflect:</strong></p>
+<p>Answer the following questions in your own words.&nbsp;</p>
+<ul>
+<li>What's the HTML <em>canvas</em> element and why is it important?</li>
+<li>What's the relationship between&nbsp;the&nbsp;Chart.js API and the Canvas&nbsp;API?</li>
+<li>How might you use either of these APIs&nbsp;in your own donut shop?</li>
+</ul><div class="message user_content enhanced">
+<div class="description user_content teacher-version enhanced">
+<p>After writing your reflection, you'll be able to read and reply to your classmates' reflections as well.</p>
+</div>
+</div></div>
+
+
+
+
+        </div>
+      </div>
+
+      <div id="discussion-toolbar" class="toolbarView">
+        <div class="headerBar" data-sticky="">
+          <div class="row-fluid form-inline" style="overflow: visible;">
+            <div class="span9">
+              <input id="discussion-search" type="text" aria-label="Search entries or author" placeholder="Search entries or author" size="50">
+
+              <input type="checkbox" id="onlyUnread" aria-label="filter replies by unread" class="ui-helper-hidden-accessible"><label aria-hidden="true" for="onlyUnread" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Unread</span></label>
+
+              &nbsp; &nbsp;
+              <button id="collapseAll" class="btn disableWhileFiltering" title="Collapse replies" aria-label="Collapse replies">
+                <img alt="Collapse replies" src="drawing_text_files/collapse_icon.png">
+              </button>
+              <button id="expandAll" class="btn disableWhileFiltering" title="Expand replies" aria-label="Expand replies">
+                <img alt="Expand replies" src="drawing_text_files/expand_icon.png">
+              </button>
+
+            </div>
+
+            <div class="span3 right-align">
+              <a role="button" href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="btn topic-subscribe-button" data-tooltip="bottom" title="You are unsubscribed and will not be notified of new comments" aria-label="You are unsubscribed and will not be notified of new comments. Click to subscribe ">
+                <i class="icon-discussion-check" aria-hidden="hidden"></i>
+                Subscribe
+              </a>
+              <a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="btn topic-unsubscribe-button btn-success" data-tooltip="bottom" role="button" title="You are subscribed and will be notified of new comments" aria-label="You are subscribed and will be notified of new comments. Click to unsubscribe ">
+                <i class="icon-discussion-check" aria-hidden="hidden"></i>
+                Subscribed
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  <div class="discussion-entry-reply-area reply-box-container hide-if-collapsed hide-if-replying">
+    <div class="notification" data-bind="notification"></div>
+    <a role="button" class="discussion-reply-action discussion-reply-box" data-event="addReply" href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">
+      <i class="icon-replied"></i>
+      <span aria-hidden="true">Write a reply...</span>
+      
+        <span class="screenreader-only">Reply to Main Discussion</span>
+      
+    </a>
+  </div>
+
+<div class="discussion-entry-reply-area hide-if-collapsed show-if-replying">
+  <form class="discussion-reply-form replying">
+    <div class="discussion-top-right-header pull-right">
+      <a class="tinymce-keyboard-shortcuts-toggle" href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" title="Open Help Menu"><i class="icon-info"></i><span class="screenreader-only">Keyboard shortcuts</span></a><div class="toggle-wrapper pull-right">
+        <a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">
+          HTML Editor
+        </a>
+        <a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" style="display:none;">
+          Rich Content Editor
+        </a>
+      </div>
+    </div>
+    <div class="clearfix">...</div>
+    <div id="mceu_26" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_26-body" class="mce-container-body mce-stack-layout"><div id="mceu_27" class="mce-container mce-menubar mce-toolbar mce-first mce-stack-layout-item" role="menubar" style="border-width: 0px 0px 1px; display: none;"><div id="mceu_27-body" class="mce-container-body mce-flow-layout"><div id="mceu_28" class="mce-widget mce-btn mce-menubtn mce-first mce-flow-layout-item" tabindex="-1" aria-labelledby="mceu_28" role="menuitem" aria-haspopup="true"><button id="mceu_28-open" role="presentation" type="button" tabindex="-1"><span>File</span> <i class="mce-caret"></i></button></div><div id="mceu_29" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mceu_29" role="menuitem" aria-haspopup="true"><button id="mceu_29-open" role="presentation" type="button" tabindex="-1"><span>Edit</span> <i class="mce-caret"></i></button></div><div id="mceu_30" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mceu_30" role="menuitem" aria-haspopup="true"><button id="mceu_30-open" role="presentation" type="button" tabindex="-1"><span>Insert</span> <i class="mce-caret"></i></button></div><div id="mceu_31" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mceu_31" role="menuitem" aria-haspopup="true"><button id="mceu_31-open" role="presentation" type="button" tabindex="-1"><span>View</span> <i class="mce-caret"></i></button></div><div id="mceu_32" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mceu_32" role="menuitem" aria-haspopup="true"><button id="mceu_32-open" role="presentation" type="button" tabindex="-1"><span>Format</span> <i class="mce-caret"></i></button></div><div id="mceu_33" class="mce-widget mce-btn mce-menubtn mce-last mce-flow-layout-item" tabindex="-1" aria-labelledby="mceu_33" role="menuitem" aria-haspopup="true"><button id="mceu_33-open" role="presentation" type="button" tabindex="-1"><span>Table</span> <i class="mce-caret"></i></button></div></div></div><div id="mceu_34" class="mce-toolbar-grp mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group"><div id="mceu_34-body" class="mce-container-body mce-stack-layout"><div id="mceu_35" class="mce-container mce-toolbar mce-first mce-stack-layout-item" role="toolbar"><div id="mceu_35-body" class="mce-container-body mce-flow-layout"><div id="mceu_36" class="mce-container mce-first mce-last mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_36-body"><div id="mceu_0" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_0" role="button" aria-label="Bold" aria-pressed="false"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_1" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_1" role="button" aria-label="Italic"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_2" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_2" role="button" aria-label="Underline"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div><div id="mceu_3" class="mce-widget mce-btn mce-colorbutton" role="button" tabindex="-1" aria-haspopup="true" aria-label="Text colour. Press down to select"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-forecolor"></i><span id="mceu_3-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_4" class="mce-widget mce-btn mce-colorbutton" role="button" tabindex="-1" aria-haspopup="true" aria-label="Background colour. Press down to select"><button role="presentation" hidefocus="1" type="button" tabindex="-1"><i class="mce-ico mce-i-backcolor"></i><span id="mceu_4-preview" class="mce-preview"></span></button><button type="button" class="mce-open" hidefocus="1" tabindex="-1"> <i class="mce-caret"></i></button></div><div id="mceu_5" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_5" role="button" aria-label="Clear formatting"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-removeformat"></i></button></div><div id="mceu_6" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_6" role="button" aria-label="Align left"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div id="mceu_7" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_7" role="button" aria-label="Align center"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div id="mceu_8" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_8" role="button" aria-label="Align right"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div><div id="mceu_9" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_9" role="button" aria-label="Decrease indent"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div id="mceu_10" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_10" role="button" aria-label="Increase indent"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div><div id="mceu_11" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_11" role="button" aria-label="Superscript"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-superscript"></i></button></div><div id="mceu_12" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_12" role="button" aria-label="Subscript"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-subscript"></i></button></div><div id="mceu_13" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_13" role="button" aria-label="Bullet list"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div id="mceu_14" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_14" role="button" aria-label="Numbered list"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div></div></div></div></div><div id="mceu_37" class="mce-container mce-toolbar mce-last mce-stack-layout-item" role="toolbar"><div id="mceu_37-body" class="mce-container-body mce-flow-layout"><div id="mceu_38" class="mce-container mce-first mce-last mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_38-body"><div id="mceu_15" class="mce-widget mce-btn mce-menubtn mce-first" tabindex="-1" aria-labelledby="mceu_15" role="button" aria-label="Table" aria-haspopup="true"><button id="mceu_15-open" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-table"></i><span></span> <i class="mce-caret"></i></button></div><div id="mceu_16" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_16" role="button" aria-label="Link to URL" aria-pressed="false"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-none" style="background-image: url('/javascripts/tinymce_plugins/instructure_links/img/button.gif')"></i></button></div><div id="mceu_17" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_17" role="button" aria-label="Remove link"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-unlink"></i></button></div><div id="mceu_18" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_18" role="button" aria-label="Embed image" aria-pressed="false"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-none" style="background-image: url('/javascripts/tinymce_plugins/instructure_image/img/button.gif')"></i></button></div><div id="mceu_19" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_19" role="button" aria-label="Insert Math Equation" aria-pressed="false"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-none" style="background-image: url('/javascripts/tinymce_plugins/instructure_equation/img/button.gif')"></i></button></div><div id="mceu_20" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_20" aria-label="Record/Upload Media" aria-disabled="true"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-none" style="background-image: url('/javascripts/tinymce_plugins/instructure_record/img/record.gif')" alt="This feature is inaccessible for screen readers." title="This feature is inaccessible for screen readers."></i></button></div><div id="mceu_21" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_21" role="button" aria-label="Insert Equella Links"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-none" style="background-image: url('/javascripts/tinymce_plugins/instructure_equella/button.gif')"></i></button></div><div id="mceu_22" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_22" role="button" aria-label="Left to right"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-ltr"></i></button></div><div id="mceu_23" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_23" role="button" aria-label="Right to left"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-rtl"></i></button></div><div id="mceu_24" class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox" tabindex="-1" aria-labelledby="mceu_24" role="button" aria-label="Font size. Press down to select" aria-haspopup="true"><button id="mceu_24-open" role="presentation" type="button" tabindex="-1"><span>Font Sizes</span> <i class="mce-caret"></i></button></div><div id="mceu_25" class="mce-widget mce-btn mce-menubtn mce-fixed-width mce-listbox mce-last" tabindex="-1" aria-labelledby="mceu_25" role="button" aria-haspopup="true" aria-label="Formatting. Press down to select"><button id="mceu_25-open" role="presentation" type="button" tabindex="-1"><span>Paragraph</span> <i class="mce-caret"></i></button></div></div></div></div></div></div></div><div id="mceu_39" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="root_reply_message_for_4060830_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press ALT+F8 for help" src='javascript:""' style="width: 100%; height: 155px; display: block;"></iframe></div><div id="mceu_40" class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_40-body" class="mce-container-body mce-flow-layout" tabindex="-1"><div id="mceu_41" class="mce-path mce-first mce-flow-layout-item"><div role="button" class="mce-path-item" data-index="0" tabindex="-1" id="mceu_41-0" aria-level="0">p</div><div class="mce-divider" aria-hidden="true"> » </div><div role="button" class="mce-path-item mce-last" data-index="1" tabindex="-1" id="mceu_41-1" aria-level="1">span</div></div><div id="mceu_42" class="mce-last mce-flow-layout-item mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea class="reply-textarea" id="root_reply_message_for_4060830" aria-hidden="true" style="display: none;"></textarea>
+
+    <div class="clearfix">
+      <div class="discussion-reply-attachments-container">
+        <ul class="discussion-reply-attachments"></ul>
+        
+      </div>
+
+      <div class="discussion-reply-buttons">
+        <a href="javascript:" class="cancel_button btn btn-small">Cancel</a>
+        <button class="btn btn-primary btn-small" type="submit">Post reply</button>
+      </div>
+    </div>
+  </form>
+</div>
+</article>
+
+    <div id="discussion_subentries" class="discussion_subentries">
+        <span>Replies are only visible to those who have posted at least one reply.</span>
+    </div>
+
+    <div id="filterResults" class="discussion_subentries hidden"></div>
+
+  </div>
+
+    <div id="module_sequence_footer"></div>
+
+
+
+              </div>
+            </div>
+            <div id="right-side-wrapper" class="with-scrolling-right-side">
+              <aside id="right-side" role="complementary">
+                    <div id="sidebar_content" class="rs-margin-all">
+    </div>
+    <div id="editor_tabs" class="ui-tabs--mini ui-tabs ui-widget ui-widget-content ui-corner-all showing" style="">
+
+  <span class="wiki-sidebar-header" role="heading" aria-level="2">Insert content into the page</span>
+  <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" role="tablist">
+    <li class="ui-state-default ui-corner-top ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="editor_tabs_2" aria-labelledby="ui-id-3" aria-selected="true"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#editor_tabs_2" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-3">Links</a></li>
+      <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="editor_tabs_3" aria-labelledby="ui-id-4" aria-selected="false"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#editor_tabs_3" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-4">Files</a></li>
+    <li class="ui-state-default ui-corner-top" role="tab" tabindex="-1" aria-controls="editor_tabs_4" aria-labelledby="ui-id-5" aria-selected="false"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#editor_tabs_4" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-5">Images</a></li>
+  </ul>
+  <div id="editor_tabs_2" role="tabpanel" aria-labelledby="ui-id-3" class="ui-tabs-panel ui-widget-content ui-corner-bottom" aria-expanded="true" aria-hidden="false">
+    Link to other content in the course.
+      <a href="https://canvas.instructure.com/courses/942949/external_tools/retrieve?url=%7B%7B+url+%7D%7D" id="external_tool_retrieve_url" style="display: none;">&nbsp;</a>
+      <a href="https://canvas.instructure.com/courses/942949/external_tools/%7B%7B%20id%20%7D%7D/resource_selection?editor=1" id="context_external_tool_resource_selection_url" style="display: none;">&nbsp;</a>
+    Click any page to insert a link to that page.
+    <div id="pages_accordion" class="ui-accordion--mini ui-accordion ui-widget ui-helper-reset" role="tablist">
+      <a href="https://canvas.instructure.com/courses/942949/pages/%7B%7B%20page_url%20%7D%7D" id="wiki_sidebar_wiki_url" style="display: none;">&nbsp;</a>
+      <div>
+        <div class="header ui-accordion-header ui-helper-reset ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons" aria-controls="pages_tab_panel" role="tab" id="ui-accordion-pages_accordion-header-0" aria-selected="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Wiki pages</a></div>
+        <div id="pages_tab_panel" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" aria-labelledby="ui-accordion-pages_accordion-header-0" aria-expanded="true" aria-hidden="false">
+            <ul class="wiki_pages page_list">
+            </ul>
+        </div>
+      </div>
+      <div>
+        <div aria-controls="assignment_panel" role="tab" class="header ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" id="ui-accordion-pages_accordion-header-1" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Assignments</a></div>
+         <div id="assignment_panel" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="ui-accordion-pages_accordion-header-1" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <ul class="wiki_pages page_list">
+              <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments">Assignment list</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615719">Brush up on Algebra</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615689">Class 4: Quiz</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615692">Class 5: Quiz</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615693">Class 6: Quiz</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615732">Code: Add a constructor function to your guessing game</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615740">Code: Add AJAX to your vote tracker</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615741">Code: Add an HTTP server to your vote tracker</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615734">Code: Add DOM manipulation to your guessing game</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615731">Code: Add events to your donut shop</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615733">Code: Add HTML to your guessing game</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615739">Code: Add jQuery to your vote tracker</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615737">Code: Animate your donut shop</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615738">Code: Create a vote tracker</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615742">Code: Deploy your vote tracker to Heroku</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615730">Code: Improve and extend your guessing game</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615736">Code: Layout your donut shop</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615729">Code: Make a guessing game</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615728">Code: Model a donut shop</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615735">Code: Style your donut shop</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615714">Complete the Required Paperwork</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615726">Final Project</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615743">Optional: Practice jQuery</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615721">Practice Git - Attend workshop or test out</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615725">Practice HTML &amp; CSS</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615724">Practice JavaScript</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615720">Practice the Terminal</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615696">Project Report #1</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615691">Project Report #2</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615695">Project Report #3</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615694">Project Report #4</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615697">Project Report #5</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615708">Read: Chart.js and Canvas APIs</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615707">Read: CSS Transforms, Transitions, &amp; Animations</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615712">Read: Getting started with Node.js on Heroku</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615705">Read: HTML &amp; CSS Chapters 10 - 14</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615706">Read: HTML &amp; CSS Chapters 15 &amp; 17</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615701">Read: HTML &amp; CSS through Chapter 6</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615699">Read: JavaScript &amp; jQuery Chapter 3a</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615698">Read: JavaScript &amp; jQuery Chapter 3b</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615702">Read: JavaScript &amp; jQuery Chapter 5</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615704">Read: JavaScript &amp; jQuery Chapter 6</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615709">Read: JavaScript &amp; jQuery Chapter 7</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615710">Read: JavaScript &amp; jQuery Chapter 8</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615700">Read: JavaScript &amp; jQuery through Chapter 2 &amp; Chapter 4</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615703">Read: Write-up on Domain Modeling</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615727">Self-assessment for Personal Growth Plan</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615713">Setup Canvas</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615722">Setup Sublime Text 2</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615744">Set up your Slack account</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615711">Watch: Building an HTTP file server in Node.js</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615715">Week 1 Feedback</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615716">Week 2 Feedback</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615690">Week 2 Quiz: CSS</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615717">Week 3 Feedback</a></li>
+                <li title="Click to insert a link to this assignment"><a href="https://canvas.instructure.com/courses/942949/assignments/3615718">Week 4 Feedback</a></li>
+            </ul>
+         </div>
+      </div>
+      <div>
+        <div aria-controls="quizzes_panel" class="header ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" id="ui-accordion-pages_accordion-header-2" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Quizzes</a></div>
+         <div id="quizzes_panel" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="ui-accordion-pages_accordion-header-2" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <ul class="wiki_pages page_list">
+              <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes">Quiz list</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252119">Class 4: Quiz</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252120">Inbound Self-assessment Survey</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252121">Week 2 Quiz: CSS</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252122">Project Report #2</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252123">Class 5: Quiz</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252124">Class 6: Quiz</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252125">Outbound self-assessment survey</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252126">Project Report #4</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252127">Project Report #3</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252128">Project Report #1</a></li>
+                <li title="Click to insert a link to this quiz"><a href="https://canvas.instructure.com/courses/942949/quizzes/1252129">Project Report #5</a></li>
+            </ul>
+         </div>
+      </div>
+      <div>
+        <div class="header ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" aria-controls="announcements_panel" role="tab" id="ui-accordion-pages_accordion-header-3" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Announcements</a></div>
+         <div id="announcements_panel" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="ui-accordion-pages_accordion-header-3" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <ul class="wiki_pages page_list">
+              <li title="Click to insert a link to this announcement"><a href="https://canvas.instructure.com/courses/942949/announcements">Announcements list</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <div>
+        <div role="tab" aria-controls="discussions_panel" class="header ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" id="ui-accordion-pages_accordion-header-4" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Discussions</a></div>
+         <div id="discussions_panel" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="ui-accordion-pages_accordion-header-4" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <ul class="wiki_pages page_list">
+              <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics">Discussion Index</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060831">Read: JavaScript &amp; jQuery Chapter 7</a></li>
+                <li title="Click to insert a link to this topic"><a href="drawing_text_files/drawing_text.html">Read: Chart.js and Canvas APIs</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060829">Read: CSS Transforms, Transitions, &amp; Animations</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060828">Read: HTML &amp; CSS Chapters 15 &amp; 17</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060832">Read: JavaScript &amp; jQuery Chapter 8</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060827">Read: HTML &amp; CSS Chapters 10 - 14</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060826">Read: JavaScript &amp; jQuery Chapter 6</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060825">Read: Write-up on Domain Modeling</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060823">Read: HTML &amp; CSS through Chapter 6</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060824">Read: JavaScript &amp; jQuery Chapter 5</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060820">Read: JavaScript &amp; jQuery Chapter 3b</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060822">Read: JavaScript &amp; jQuery through Chapter 2 &amp; Chapter 4</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060821">Read: JavaScript &amp; jQuery Chapter 3a</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060834">Read: Getting started with Node.js on Heroku</a></li>
+                <li title="Click to insert a link to this topic"><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060833">Watch: Building an HTTP file server in Node.js</a></li>
+            </ul>
+         </div>
+      </div>
+
+      <div>
+        <div role="tab" aria-controls="modules_panel" class="header ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" id="ui-accordion-pages_accordion-header-5" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Modules</a></div>
+          <div id="modules_panel" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="ui-accordion-pages_accordion-header-5" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <ul class="wiki_pages page_list">
+              <li title="Click to insert a link to this module"><a href="https://canvas.instructure.com/courses/942949/modules">Modules list</a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div>
+        <div class="header ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons" role="tab" aria-controls="groups_panel" id="ui-accordion-pages_accordion-header-6" aria-selected="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#">Course navigation</a></div>
+         <div role="tabpanel" id="groups_panel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="ui-accordion-pages_accordion-header-6" aria-expanded="false" aria-hidden="true" style="display: none;">
+            <ul class="wiki_pages page_list">
+                <li title="Click to insert a link to the assignments page"><a href="https://canvas.instructure.com/courses/942949/assignments">Assignment list</a></li>
+                <li title="Click to insert a link to the wiki"><a href="https://canvas.instructure.com/courses/942949/pages">Wiki Home</a></li>
+                <li title="Click to insert a link to the discussions page"><a href="https://canvas.instructure.com/courses/942949/discussion_topics">Discussions index</a></li>
+                <li title="Click to insert a link to the syllabus"><a href="https://canvas.instructure.com/courses/942949/assignments/syllabus">Course syllabus</a></li>
+                <li title="Click to insert a link to the announcements page"><a href="https://canvas.instructure.com/courses/942949/announcements">Announcement List</a></li>
+                <li title="Click to insert a link to the files page"><a href="https://canvas.instructure.com/courses/942949/files">Files index</a></li>
+                <li title="Click to insert a link to the collaborations page"><a href="https://canvas.instructure.com/courses/942949/collaborations">Collaborations</a></li>
+                <li title="Click to insert a link to the grades page"><a href="https://canvas.instructure.com/courses/942949/grades">Grades</a></li>
+                <li title="Click to insert a link to the people page"><a href="https://canvas.instructure.com/courses/942949/users">People</a></li>
+                <li title="Click to insert a link to the modules page"><a href="https://canvas.instructure.com/courses/942949/modules">Modules</a></li>
+            </ul>
+         </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="editor_tabs_3" aria-labelledby="ui-id-4" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+    Click any file to insert a download link for that file.
+    <div id="wiki_sidebar_file_uploads" class="uploading_file_list" style="display: none;">
+      <div class="uploading">
+        Uploading <span class="filename">file</span>...
+        <div>
+          <img alt="Loading..." src="drawing_text_files/ajax-loader-bar.gif">
+        </div>
+      </div>
+      <div class="remaining">
+        <span class="files_remaining">0</span> more to upload
+      </div>
+    </div>
+    <div class="file_list_holder ">
+      <div class="dragging_message">Drop files here to upload</div>
+      <div id="file_list_container" class="file_list" style="max-height: 300px; overflow: auto;">
+        <a id="folder_url" href="https://canvas.instructure.com/courses/942949/folders/%7B%7B%20id%20%7D%7D" style="display: none;">&nbsp;</a>
+        <ul id="tree1" role="tree" data-level="0" tabindex="0" aria-label="Files, Use the up and down arrow keys to navigate through the tree. Press right to expand folders, left to collapse">
+            <li aria-level="0" aria-selected="false" role="treeitem" data-id="5263762" class="folder folder_5263762" id="root_folder_5263762">
+            <span class="screenreader-only">course files folder</span>
+            <span class="name">course files </span>
+              <ul role="group"></ul>
+            </li>
+          <li aria-selected="false" role="treeitem" class="file file_blank" style="display: none;">
+            <span class="name" rel="/courses/942949/files/{{ id }}/download?wrap=1"></span>
+          </li>
+          <li aria-selected="false" role="treeitem" class="folder_blank" style="display: none;">
+            <span class="name"></span>
+            <ul role="group"></ul>
+          </li>
+          <li class="loading" style="display: none;">
+            Loading...
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div aria-atomic="true" id="editor_tabs_4" aria-labelledby="ui-id-5" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" aria-expanded="false" aria-hidden="true" style="display: none;">
+    Click any image to embed the image in the page.
+    <div>
+      <a tabindex="0" href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="find_new_image_link find">Find images on flickr creative commons</a>
+    </div>
+    <div id="wiki_sidebar_image_uploads" class="uploading_file_list uploading_image_list" style="display: none;">
+      <div class="uploading">
+        Uploading <span class="filename">file</span>...
+        <div>
+          <img alt="Loading..." src="drawing_text_files/ajax-loader-bar.gif">
+        </div>
+      </div>
+      <div class="remaining">
+        <span class="files_remaining">0</span> more to upload
+      </div>
+      <a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" style="text-align: center display: none;" class="img_link" title="Click to embed image">
+  <div class="img_holder">
+    <img class="img" data-url="" src="drawing_text_files/drawing_text.html" alt="{{ display_name }}" title="Click to embed {{ display_name }}">
+  </div>
+  <div class="display_name">{{ display_name }}</div>
+</a>
+
+    </div>
+    <div class="image_list_holder ">
+      <div class="dragging_message">Drop images here to upload</div>
+      <div class="image_list" style="max-height: 300px; overflow: auto;" data-url="/courses/942949/images">
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <a href="https://canvas.instructure.com/services?service_type=BookmarkService" class="bookmark_services_url">&nbsp;</a>
+    <a href="https://canvas.instructure.com/search/bookmarks?q=%7B%7B+query+%7D%7D&amp;service_type=%7B%7B+service_type+%7D%7D" class="bookmark_search_url">&nbsp;</a>
+    <span class="context_code">course_942949</span>
+    <div id="wiki_sidebar_select_folder_dialog">
+      Select a destination folder for these <span class="file_count">&nbsp;</span> files:
+      <div style="margin: 20px;">
+        <select class="folder_id">
+            <option value="5263762">course files</option>
+        </select>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn select_button">Upload files to folder</button>
+        <button type="button" class="btn cancel_button btn button-secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+              </aside>
+            </div>
+          </div>
+        </div>
+      
+      <footer role="contentinfo" id="footer">
+  <a href="http://www.instructure.com/" class="footer-logo ">
+    <span class="screenreader-only">
+      By Instructure
+    </span>
+  </a>
+  <span id="footer-links">
+    <a target="_blank" href="http://eepurl.com/1LSkT">User research</a>
+      <a href="http://help.instructure.com/" class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button">Help</a>
+    <a href="https://canvas.instructure.com/privacy_policy">Privacy policy</a>
+<a href="https://canvas.instructure.com/terms_of_use">Terms of service</a>
+<a href="http://facebook.com/instructure">Facebook</a>
+<a href="http://twitter.com/instructure">Twitter</a>
+
+  </span>
+</footer>
+    </div>
+  </div>
+
+
+
+    <div id="keyboard_navigation">
+          <ul class="navigation_list" tabindex="-1">
+      <li>
+        <span class="keycode">j</span>
+        <span class="colon">:</span>
+        <span class="description">Next message</span>
+      </li>
+      <li>
+        <span class="keycode">k</span>
+        <span class="colon">:</span>
+        <span class="description">Previous message</span>
+      </li>
+      <li>
+        <span class="keycode">e</span>
+        <span class="colon">:</span>
+        <span class="description">Edit current message</span>
+      </li>
+      <li>
+        <span class="keycode">d</span>
+        <span class="colon">:</span>
+        <span class="description">Delete current message</span>
+      </li>
+      <li>
+        <span class="keycode">r</span>
+        <span class="colon">:</span>
+        <span class="description">Reply to current message</span>
+      </li>
+      <li>
+        <span class="keycode">n</span>
+        <span class="colon">:</span>
+        <span class="description">Reply to topic</span>
+      </li>
+    </ul>
+
+      <div class="hidden-readable" tabindex="0">
+        Press comma to close this dialog
+      </div>
+    </div>
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <a href="https://canvas.instructure.com/page_views/d7215f0b-bf76-4438-b83a-ae67f25ca514" id="page_view_update_path">&nbsp;</a>
+        <div id="page_view_id">d7215f0b-bf76-4438-b83a-ae67f25ca514</div>
+        <a id="equella_endpoint_url" href="http://oer.equella.com/signon.do">&nbsp;</a>
+        <a id="equella_callback_url" href="https://canvas.instructure.com/external_content/success/equella">&nbsp;</a>
+        <a id="equella_cancel_url" href="https://canvas.instructure.com/external_content/cancel/equella">&nbsp;</a>
+        <a id="equella_action" href="https://canvas.instructure.com/courses/942949/discussion_topics/selectOrAdd">&nbsp;</a>
+          <div id="equella_teaser">Equella is a shared content repository that organizations can use to easily track and reuse content.  This OER repository is a collection of free resources provided by Equella.</div>
+    </div>
+  <div id="cant_record_dialog" style="display: none;">
+  <div>
+    In order to create video or audio recordings your computer needs to be webcam-enabled. If you don't have a webcam on your computer, you can still record audio-only messages by first installing the Google Video Chat plugin.
+  </div>
+  <div style="text-align: center; font-size: 1.5em; margin: 10px;">
+    <a href="http://www.google.com/chat/video" target="_blank" class="btn">Install the video plugin</a>
+  </div>
+  <div class="links" style="text-align: right; font-size: 0.8em; display: none;">
+    <a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="cant_record_link">Don't have a webcam?</a>
+  </div>
+</div>
+  <div id="aria_alerts" class="hide-text affix" role="alert" aria-live="assertive"></div>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div> <!-- #application -->
+
+
+<span id="hc_extension_svg_filters" hidden=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter id="hc_extension_off"><feComponentTransfer><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_highcontrast"><feComponentTransfer><feFuncR type="gamma" exponent="3.0"></feFuncR><feFuncG type="gamma" exponent="3.0"></feFuncG><feFuncB type="gamma" exponent="3.0"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_highcontrast_back"><feComponentTransfer><feFuncR type="gamma" exponent="0.33"></feFuncR><feFuncG type="gamma" exponent="0.33"></feFuncG><feFuncB type="gamma" exponent="0.33"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_grayscale"><feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"></feColorMatrix><feComponentTransfer><feFuncR type="gamma" exponent="3"></feFuncR><feFuncG type="gamma" exponent="3"></feFuncG><feFuncB type="gamma" exponent="3"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_grayscale_back"><feComponentTransfer><feFuncR type="gamma" exponent="0.33"></feFuncR><feFuncG type="gamma" exponent="0.33"></feFuncG><feFuncB type="gamma" exponent="0.33"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_invert"><feComponentTransfer><feFuncR type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncR><feFuncG type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncG><feFuncB type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_invert_back"><feComponentTransfer><feFuncR type="table" tableValues="1 0"></feFuncR><feFuncG type="table" tableValues="1 0"></feFuncG><feFuncB type="table" tableValues="1 0"></feFuncB></feComponentTransfer><feComponentTransfer><feFuncR type="gamma" exponent="1.7"></feFuncR><feFuncG type="gamma" exponent="1.7"></feFuncG><feFuncB type="gamma" exponent="1.7"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_invert_grayscale"><feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"></feColorMatrix><feComponentTransfer><feFuncR type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncR><feFuncG type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncG><feFuncB type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncB></feComponentTransfer></filter><filter id="hc_extension_yellow_on_black"><feComponentTransfer><feFuncR type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncR><feFuncG type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncG><feFuncB type="gamma" amplitude="-1" exponent="3" offset="1"></feFuncB></feComponentTransfer><feColorMatrix type="matrix" values="0.3 0.5 0.2 0 0 0.3 0.5 0.2 0 0 0 0 0 0 0 0 0 0 1 0"></feColorMatrix></filter><filter id="hc_extension_yellow_on_black_back"><feComponentTransfer><feFuncR type="table" tableValues="1 0"></feFuncR><feFuncG type="table" tableValues="1 0"></feFuncG><feFuncB type="table" tableValues="1 0"></feFuncB></feComponentTransfer><feComponentTransfer><feFuncR type="gamma" exponent="0.33"></feFuncR><feFuncG type="gamma" exponent="0.33"></feFuncG><feFuncB type="gamma" exponent="0.33"></feFuncB></feComponentTransfer></filter></defs></svg></span><div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable" tabindex="-1" style="display: none; outline: 0px; z-index: 1000; position: absolute;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title" role="heading">Keyboard shortcuts</span><a href="https://canvas.instructure.com/courses/942949/discussion_topics/4060830#" class="ui-dialog-titlebar-close ui-corner-all" role="button" tabindex="0"><span class="ui-icon ui-icon-closethick">close</span></a></div><ul class="tinymce-keyboard-shortcuts ui-dialog-content ui-widget-content" id="ui-id-2" style="display: block;">
+  
+    <li>
+      <code>ALT+F9</code>
+      <span>Open the editor's menu bar</span>
+    </li>
+  
+    <li>
+      <code>ALT+F10</code>
+      <span>Open the editor's toolbar</span>
+    </li>
+  
+    <li>
+      <code>ESC</code>
+      <span>Close menu or dialog box; also gets you back to editor area</span>
+    </li>
+  
+    <li>
+      <code>TAB/Arrows</code>
+      <span>Navigate left/right through menu/toolbar</span>
+    </li>
+  
+    <li>
+      <code>ALT+F8</code>
+      <span>Open this help dialog</span>
+    </li>
+  
+</ul><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div></div><div id="mceu_43" class="mce-widget mce-tooltip mce-tooltip-n" role="presentation" style="left: 243.297px; top: 777px; z-index: 131070; display: none;"><div class="mce-tooltip-arrow"></div><div class="mce-tooltip-inner">Link to URL</div></div></body></html>
